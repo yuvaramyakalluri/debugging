@@ -1,0 +1,61 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>CampusCafe — Student Order Portal</title>
+  <link rel="stylesheet" href="styles/main.css" />
+  <link rel="stylesheet" href="styles/theme.css" />
+</head>
+<body>
+  <header class="topbar">
+    <div class="brand">
+      <h1>CampusCafe</h1>
+      <p>Fresh snacks &amp; coffee between lectures</p>
+    </div>
+    <div class="cart-pill">
+      Cart: <span id="cart-count">0</span> items
+    </div>
+  </header>
+
+  <main class="container">
+    <section>
+      <div class="controls">
+        <div class="filter-group">
+          <button class="filter-btn active" data-category="all">All</button>
+          <button class="filter-btn" data-category="drinks">Drinks</button>
+          <button class="filter-btn" data-category="snacks">Snacks</button>
+        </div>
+        <input
+          type="search"
+          id="search-input"
+          class="search-input"
+          placeholder="Search menu..."
+        />
+      </div>
+
+      <div id="menu-grid" class="menu-grid"></div>
+    </section>
+
+    <aside class="cart-panel">
+      <h2>Your Order</h2>
+      <ul id="cart-list" class="cart-list"></ul>
+
+      <div class="summary-row summary-total">
+        <span>Subtotal</span>
+        <span>₹<span id="cart-subtotal">0</span></span>
+      </div>
+
+      <p id="cart-msg" class="msg-error"></p>
+
+      <button id="checkout-btn" class="btn btn-primary" style="width: 100%; margin-top: 0.75rem;">
+        Proceed to Checkout
+      </button>
+    </aside>
+  </main>
+
+  <script src="scripts/menuData.js"></script>
+  <script src="scripts/app.js"></script>
+</body>
+</html>

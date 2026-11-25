@@ -1,0 +1,16 @@
+:root {
+  --primary: #d97706;
+  --primary-dark: #92400e;
+  --accent-soft: #fef3c7;
+  --surface: #ffffff;
+  --border: #e5e7eb;
+  --muted: #6b7280;
+  --text: #1f2937;
+}
+
+body {
+  color: var(--text);
+  background-color: #fffbeb;
+  background-image: url("../assets/bg-pattern.svg");
+  background-repeat: repeat;
+}
